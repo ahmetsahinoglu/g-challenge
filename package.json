@@ -1,0 +1,33 @@
+{
+  "name": "g-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "npm run test && babel src -d dist",
+    "dev": "nodemon -r babel-register src/app.js",
+    "start": "babel src -d dist && node dist/app.js",
+    "clean": "rimraf dist",
+    "test": "jest",
+    "coverage": "nyc --reporter=html --reporter=text mocha --require babel-register"
+  },
+  "author": "Ahmet Sahinoglu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "mongoose": "^5.5.11",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-register": "6.26.0",
+    "babel-plugin-module-resolver": "3.1.0",
+    "babel-preset-env": "1.6.1",
+    "jest": "^24.9.0",
+    "nodemon": "1.19.0",
+    "rimraf": "2.6.3",
+    "supertest": "^4.0.2"
+  }
+}
