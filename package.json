@@ -25,6 +25,7 @@
     "babel-plugin-module-resolver": "3.1.0",
     "babel-preset-env": "1.6.1",
     "jest": "^24.9.0",
+    "mockingoose": "2.13.2",
     "nodemon": "1.19.0",
     "rimraf": "2.6.3",
     "supertest": "^4.0.2"

@@ -24,8 +24,6 @@ export const listRecords = (req, res) => {
             LOGGER.info(undefined, "Success to get records.");
             let code = 0;
             return res.status(200).send({ record: result, code, msg: messages[code] })
-        }).catch((err) => {
-        return exception.SOMETHING_WENT_WRONG(req, res, err);
-    });
+        }).catch(exception.SOMETHING_WENT_WRONG(req, res));
 
 };

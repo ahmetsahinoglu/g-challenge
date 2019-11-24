@@ -29,7 +29,7 @@ const MIN_MAX_PROBLEM = (req, res) => {
     renderResponseBody(res, status.BAD_REQUEST, 3);
 };
 
-const SOMETHING_WENT_WRONG = (req, res, err) => {
+const SOMETHING_WENT_WRONG = (req, res) => err => {
     LOGGER.trace(req.originalUrl, "SOMETHING_WENT_WRONG", err.stack || err, err.message || err);
     renderResponseBody(res, status.INTERNAL_SERVER_ERROR, 4);
 };
