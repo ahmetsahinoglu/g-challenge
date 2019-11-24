@@ -1,4 +1,4 @@
-import { LOGGER, requestUtil } from "../heplers";
+import { LOGGER, requestUtil } from "../helpers";
 import { exception, messages } from "../exceptions";
 import { listRecordsByGivenParameters } from "../db";
 

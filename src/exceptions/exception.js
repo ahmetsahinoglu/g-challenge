@@ -1,5 +1,5 @@
 import { messages } from "./messages";
-import { LOGGER } from "../heplers";
+import { LOGGER } from "../helpers";
 
 const status = {
     BAD_REQUEST: 400,

@@ -6,7 +6,7 @@ import fs from "fs";
 import path from "path";
 import { connectDB } from "db";
 import { listRecords } from "services";
-import { LOGGER } from "./heplers";
+import { LOGGER } from "./helpers";
 
 export const app = express();
 
