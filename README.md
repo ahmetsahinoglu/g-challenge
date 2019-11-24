@@ -14,21 +14,21 @@ $ git clone https://github.com/ahmetsahinoglu/g-challenge.git
 $ cd g-challenge
 $ npm i
 ```
-#####Set your environment variable
+###Set your environment variable
 ```bash
 $ export SERVER_PORT=YOUR_PORT_NUMBER
 $ export MONGO_URL=YOUR_MONGO_URL
 ```
-#####How to start project in Development Mode
+###How to start project in Development Mode
 ```bash
 $ npm run dev
 ```
 
-#####How to Build for Production
+###How to Build for Production
 ```bash
 $ npm run build
 ```
-#####How to run Unit Tests.
+###How to run Unit Tests.
 ```bash
 $ npm run test
 ```
