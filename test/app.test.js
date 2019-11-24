@@ -2,6 +2,8 @@ import { app, server } from "../src/app";
 import request from "supertest";
 import { messages } from "../src/exceptions";
 
+afterEach(() => server.close());
+
 describe('Test app', () => {
     it('shouldPassWithValidParameters', done => {
         request(app)
