@@ -2,7 +2,7 @@
 
 g-challenge is a NodeJS(express) application provides single Rest API that uses MongoDB.
 
-URL = https://g-challenge.herokuapp.com/v1/record-list
+URL = https://g-challenge.herokuapp.com/v1/records
 
 ## Installation
 
@@ -46,7 +46,7 @@ $ npm run test
 
 ```
 curl -X POST \
-  https://g-challenge.herokuapp.com/v1/record-list \
+  https://g-challenge.herokuapp.com/v1/records \
   -H 'Content-Type: application/json' \
   -d '{ 
   "startDate": "2016-01-26", 

@@ -13,7 +13,7 @@ afterEach((done) => {
 describe('Test app', () => {
     it('shouldPassWithValidParameters', done => {
         request(app)
-            .post('/v1/record-list')
+            .post('/v1/records')
             .send({
                 startDate: '2016-01-26',
                 endDate: '2018-02-02',
@@ -31,7 +31,7 @@ describe('Test app', () => {
 
     it('shouldTakeBadRequestWithMissingParameters', done => {
         request(app)
-            .post('/v1/record-list')
+            .post('/v1/records')
             .send({
                 startDate: '2016-01-26',
                 endDate: '2018-02-02',
@@ -48,7 +48,7 @@ describe('Test app', () => {
 
     it('shouldTakeBadRequestWithWrongDateFormat', done => {
         request(app)
-            .post('/v1/record-list')
+            .post('/v1/records')
             .send({
                 startDate: '2016/01/26',
                 endDate: '2018-02-02',
@@ -66,7 +66,7 @@ describe('Test app', () => {
 
     it('shouldTakeBadRequestWithMinCountGreaterThanMax', done => {
         request(app)
-            .post('/v1/record-list')
+            .post('/v1/records')
             .send({
                 startDate: '2016-01-26',
                 endDate: '2018-02-02',
@@ -87,7 +87,7 @@ describe('Test app', () => {
         await mockingoose(recordModel()).toReturn(new Error(), "aggregate");
 
         await request(app)
-            .post('/v1/record-list')
+            .post('/v1/records')
             .send({
                 startDate: '2016-01-26',
                 endDate: '2018-02-02',

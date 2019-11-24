@@ -31,7 +31,7 @@ connectDB(process.env.MONGO_URL)
     });
 
 app.use('/v1', router);
-router.post('/record-list', listRecords);
+router.post('/records', listRecords);
 
 export const server = app.listen(port, () => {
     LOGGER.info(undefined, `Server started on port :${port}`);
